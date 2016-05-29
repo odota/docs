@@ -40,22 +40,6 @@
                 "user": {
                   "type": "object",
                   "description": "Data of the currently logged in user"
-                },
-                "navbar_pages": {
-                  "type": "object",
-                  "description": "Available pages in the navbar"
-                },
-                "player_pages": {
-                  "type": "object",
-                  "description": "Available pages for players"
-                },
-                "match_pages": {
-                  "type": "object",
-                  "description": "Available pages for matches"
-                },
-                "player_fields": {
-                  "type": "object",
-                  "description": "Fields to compute player statistics for"
                 }
               }
             }
