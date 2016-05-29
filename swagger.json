@@ -289,835 +289,835 @@
             }
           }
         }
-      },
-      "/players/{account_id}": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/matches": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/matches": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/heroes": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/heroes": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/peers": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/peers": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/activity": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/activity": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/records": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/records": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/counts": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/counts": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/histograms": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/histograms": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/trends": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/trends": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/wardmap": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/wardmap": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/items": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/items": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/wordcloud": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/wordcloud": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/rating": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/rating": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-            "/players/{account_id}/rankings": {
-        "get": {
-          "tags": [
-            "players"
-          ],
-          "summary": "A Dota 2 player",
-          "parameters": [
-            {
-              "name": "account_id",
-              "in": "path",
-              "description": "Steam32 account ID",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "limit",
-              "in": "query",
-              "description": "Number of matches to limit to",
-              "required": true,
-              "type": "long"
-            },
-            {
-              "name": "desc",
-              "in": "query",
-              "description": "Field to order by",
-              "required": true,
-              "type": "long"
-            }
-          ],
-          "description": "Returns player data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "Player data",
-              "schema": {
-                "properties": {
-                  "profile": {},
-                  "win": {},
-                  "lose": {},
-                  "heroes_list": {},
-                  "teammates_list": {},
-                  "matches": {},
-                  "mmr_estimate": {},
-                  "solo_competitive_rank": {},
-                  "competitive_rank": {},
-                  "wordcloud": {},
-                  "aggData": {},
-                  "wardmap": {},
-                  "rankings": {},
-                  "activity": {}
-                }
+      }
+    },
+    "/players/{account_id}/rankings": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "Steam32 account ID",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of matches to limit to",
+            "required": true,
+            "type": "long"
+          },
+          {
+            "name": "desc",
+            "in": "query",
+            "description": "Field to order by",
+            "required": true,
+            "type": "long"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {
+                "profile": {},
+                "win": {},
+                "lose": {},
+                "heroes_list": {},
+                "teammates_list": {},
+                "matches": {},
+                "mmr_estimate": {},
+                "solo_competitive_rank": {},
+                "competitive_rank": {},
+                "wordcloud": {},
+                "aggData": {},
+                "wardmap": {},
+                "rankings": {},
+                "activity": {}
               }
             }
           }
         }
-      },
-      "/distributions": {
-        "get": {
-          "tags": [
-            "distributions"
-          ],
-          "summary": "Global Dota 2 statistics",
-          "description": "Returns ability data",
-          "produces": [
-            "application/json"
-          ],
-          "responses": {
-            "200": {
-              "description": "An object with distribution data",
-              "schema": {
-                "properties": {}
-              }
+      }
+    },
+    "/distributions": {
+      "get": {
+        "tags": [
+          "distributions"
+        ],
+        "summary": "Global Dota 2 statistics",
+        "description": "Returns ability data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object with distribution data",
+            "schema": {
+              "properties": {}
             }
           }
         }
