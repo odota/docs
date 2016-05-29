@@ -226,9 +226,8 @@
           {
             "name": "match_id",
             "in": "path",
-            "description": "The Match ID",
             "required": true,
-            "type": "int64"
+            "type": "integer"
           }
         ],
         "description": "Returns match data",
@@ -303,21 +302,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -361,21 +360,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -419,21 +418,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -477,21 +476,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -535,21 +534,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -593,21 +592,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -651,21 +650,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -709,21 +708,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -767,21 +766,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -825,21 +824,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -883,21 +882,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -941,21 +940,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -999,21 +998,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
@@ -1057,21 +1056,21 @@
             "in": "path",
             "description": "Steam32 account ID",
             "required": true,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "limit",
             "in": "query",
             "description": "Number of matches to limit to",
             "required": false,
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "desc",
             "in": "query",
             "description": "Field to order by",
             "required": false,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "description": "Returns player data",
