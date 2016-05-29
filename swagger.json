@@ -63,153 +63,21 @@
         }
       }
     },
-    "/items": {
+    "/constants": {
       "get": {
         "tags": [
-          "items"
+          "constants"
         ],
-        "summary": "An in-game item",
-        "parameters": [
-          {
-            "name": "name",
-            "in": "query",
-            "description": "Internal name of the item",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "description": "Returns item data",
+        "summary": "Constants used for mapping IDs to data",
+        "description": "Returns constant values",
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
-            "description": "An object with item data",
+            "description": "Constant values",
             "schema": {
               "properties": {
-                "id": {
-                  "type": "integer",
-                  "description": "Item ID"
-                },
-                "img": {
-                  "type": "string",
-                  "description": "Image"
-                },
-                "dname": {
-                  "type": "string",
-                  "description": "Localized Name"
-                },
-                "qual": {
-                  "type": "string"
-                },
-                "cost": {
-                  "type": "integer",
-                  "description": "Cost"
-                },
-                "desc": {
-                  "type": "string",
-                  "description": "Description"
-                },
-                "notes": {
-                  "type": "string",
-                  "description": "Notes"
-                },
-                "attrib": {
-                  "type": "string",
-                  "description": "Attributes"
-                },
-                "mc": {
-                  "type": "integer",
-                  "description": "Mana cost"
-                },
-                "cd": {
-                  "type": "boolean",
-                  "description": "Cooldown"
-                },
-                "lore": {
-                  "type": "string",
-                  "description": "Lore"
-                },
-                "components": {
-                  "type": "array",
-                  "items": {
-                    "type": "string",
-                    "description": "Component name"
-                  }
-                },
-                "created": {
-                  "type": "boolean"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/abilities": {
-      "get": {
-        "tags": [
-          "abilities"
-        ],
-        "summary": "A hero ability",
-        "parameters": [
-          {
-            "name": "name",
-            "in": "query",
-            "description": "Internal name of the ability",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "description": "Returns ability data",
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "An object with ability data",
-            "schema": {
-              "properties": {
-                "dname": {
-                  "type": "string",
-                  "description": "Localized Name"
-                },
-                "affects": {
-                  "type": "string",
-                  "description": "Ability effects"
-                },
-                "desc": {
-                  "type": "string",
-                  "description": "Ability description"
-                },
-                "notes": {
-                  "type": "string",
-                  "description": "Notes"
-                },
-                "dmg": {
-                  "type": "string",
-                  "description": "Damage"
-                },
-                "attrib": {
-                  "type": "string",
-                  "description": "Ability attributes"
-                },
-                "cmb": {
-                  "type": "string",
-                  "description": "Additional ability data"
-                },
-                "lore": {
-                  "type": "string",
-                  "description": "Ability lore"
-                },
-                "hurl": {
-                  "type": "string",
-                  "description": "Hero name"
-                },
-                "img": {
-                  "type": "string",
-                  "description": "Image link"
-                }
               }
             }
           }
