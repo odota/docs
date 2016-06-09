@@ -13,6 +13,29 @@
   "produces": [
     "application/json"
   ],
+  "parameters": {
+    "accountIdParam": {
+      "name": "account_id",
+      "in": "path",
+      "description": "Steam32 account ID",
+      "required": true,
+      "type": "integer"
+    },
+    "limitParam": {
+      "name": "limit",
+      "in": "query",
+      "description": "Number of matches to limit to",
+      "required": false,
+      "type": "integer"
+    },
+    "descParam": {
+      "name": "desc",
+      "in": "query",
+      "description": "Field to order by",
+      "required": false,
+      "type": "integer"
+    }
+  },
   "paths": {
     "/metadata": {
       "get": {
@@ -61,8 +84,7 @@
           "200": {
             "description": "Constant values",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -150,25 +172,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -208,25 +218,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -266,25 +264,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -324,25 +310,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -382,25 +356,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -440,25 +402,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -498,25 +448,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -556,25 +494,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -614,25 +540,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -672,25 +586,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -730,25 +632,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -788,25 +678,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -846,25 +724,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -904,25 +770,13 @@
         "summary": "A Dota 2 player",
         "parameters": [
           {
-            "name": "account_id",
-            "in": "path",
-            "description": "Steam32 account ID",
-            "required": true,
-            "type": "integer"
+            "$ref": "#/parameters/accountIdParam"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of matches to limit to",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/limitParam"
           },
           {
-            "name": "desc",
-            "in": "query",
-            "description": "Field to order by",
-            "required": false,
-            "type": "integer"
+            "$ref": "#/parameters/descParam"
           }
         ],
         "description": "Returns player data",
@@ -967,6 +821,35 @@
         "responses": {
           "200": {
             "description": "An object with distribution data",
+            "schema": {
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
+    "/search": {
+      "get": {
+        "tags": [
+          "search"
+        ],
+        "summary": "Search players by personaname",
+        "description": "Returns player search results",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "description": "Search string",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "An array of search results",
             "schema": {
               "properties": {}
             }
