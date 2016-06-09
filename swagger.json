@@ -70,26 +70,6 @@
         }
       }
     },
-    "/constants": {
-      "get": {
-        "tags": [
-          "constants"
-        ],
-        "summary": "Constants used for mapping IDs to data",
-        "description": "Returns constant values",
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Constant values",
-            "schema": {
-              "properties": {}
-            }
-          }
-        }
-      }
-    },
     "/matches/{match_id}": {
       "get": {
         "tags": [
@@ -850,6 +830,64 @@
         "responses": {
           "200": {
             "description": "An array of search results",
+            "schema": {
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
+    "/rankings": {
+      "get": {
+        "tags": [
+          "rankings"
+        ],
+        "parameters": [
+          {
+            "name": "hero_id",
+            "in": "query",
+            "description": "Hero ID",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "summary": "Hero rankings",
+        "description": "Returns top-ranked players for a hero",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Array of top players",
+            "schema": {
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
+    "/benchmarks": {
+      "get": {
+        "tags": [
+          "benchmarks"
+        ],
+        "parameters": [
+          {
+            "name": "hero_id",
+            "in": "query",
+            "description": "Hero ID",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "summary": "Benchmarks of average stat values for a hero",
+        "description": "Returns benchmarks for a hero",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Benchmark values",
             "schema": {
               "properties": {}
             }
