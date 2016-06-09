@@ -37,39 +37,6 @@
     }
   },
   "paths": {
-    "/metadata": {
-      "get": {
-        "tags": [
-          "metadata"
-        ],
-        "summary": "Site metadata",
-        "description": "Returns current site metadata",
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Current site metadata",
-            "schema": {
-              "properties": {
-                "banner": {
-                  "type": "string",
-                  "description": "The current banner message"
-                },
-                "cheese": {
-                  "type": "object",
-                  "description": "Progress toward donation goal"
-                },
-                "user": {
-                  "type": "object",
-                  "description": "Data of the currently logged in user"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/matches/{match_id}": {
       "get": {
         "tags": [
@@ -782,6 +749,39 @@
                 "wardmap": {},
                 "rankings": {},
                 "activity": {}
+              }
+            }
+          }
+        }
+      }
+    },
+        "/metadata": {
+      "get": {
+        "tags": [
+          "metadata"
+        ],
+        "summary": "Site metadata",
+        "description": "Returns current site metadata",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Current site metadata",
+            "schema": {
+              "properties": {
+                "banner": {
+                  "type": "string",
+                  "description": "The current banner message"
+                },
+                "cheese": {
+                  "type": "object",
+                  "description": "Progress toward donation goal"
+                },
+                "user": {
+                  "type": "object",
+                  "description": "Data of the currently logged in user"
+                }
               }
             }
           }
