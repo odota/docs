@@ -252,46 +252,46 @@
           {
             "$ref": "#/parameters/projectParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -303,8 +303,7 @@
           "200": {
             "description": "Player matches",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -320,46 +319,46 @@
           {
             "$ref": "#/parameters/accountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -371,8 +370,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -385,49 +383,49 @@
         ],
         "summary": "A Dota 2 player's peers",
         "parameters": [
-{
+          {
             "$ref": "#/parameters/accountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -439,9 +437,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-                
-              }
+              "properties": {}
             }
           }
         }
@@ -454,49 +450,49 @@
         ],
         "summary": "A Dota 2 player's activity",
         "parameters": [
-{
+          {
             "$ref": "#/parameters/accountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -508,9 +504,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-                
-              }
+              "properties": {}
             }
           }
         }
@@ -523,49 +517,49 @@
         ],
         "summary": "A Dota 2 player's records",
         "parameters": [
-         {
+          {
             "$ref": "#/parameters/accountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -577,8 +571,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -591,49 +584,49 @@
         ],
         "summary": "A Dota 2 player",
         "parameters": [
-{
+          {
             "$ref": "#/parameters/accountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -645,8 +638,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -659,52 +651,52 @@
         ],
         "summary": "A Dota 2 player",
         "parameters": [
-         {
+          {
             "$ref": "#/parameters/accountIdParam"
           },
           {
             "$ref": "#/parameters/fieldParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -716,8 +708,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -730,52 +721,52 @@
         ],
         "summary": "A Dota 2 player",
         "parameters": [
-{
+          {
             "$ref": "#/parameters/accountIdParam"
           },
           {
             "$ref": "#/parameters/fieldParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -787,8 +778,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -801,49 +791,49 @@
         ],
         "summary": "A Dota 2 player's wardmap",
         "parameters": [
-{
+          {
             "$ref": "#/parameters/accountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -855,8 +845,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -869,49 +858,49 @@
         ],
         "summary": "A Dota 2 player",
         "parameters": [
-{
+          {
             "$ref": "#/parameters/accountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -923,8 +912,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -937,49 +925,49 @@
         ],
         "summary": "A Dota 2 player's wordcloud",
         "parameters": [
-{
+          {
             "$ref": "#/parameters/accountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/winParam"
           },
-                    {
+          {
             "$ref": "#/parameters/patchParam"
           },
-                    {
+          {
             "$ref": "#/parameters/gameModeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/lobbyTypeParam"
           },
-                    {
+          {
             "$ref": "#/parameters/regionParam"
           },
-                    {
+          {
             "$ref": "#/parameters/dateParam"
           },
-                    {
+          {
             "$ref": "#/parameters/laneRoleParam"
           },
-                    {
+          {
             "$ref": "#/parameters/heroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/isRadiantParam"
           },
-                    {
+          {
             "$ref": "#/parameters/includedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/excludedAccountIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/withHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/againstHeroIdParam"
           },
-                    {
+          {
             "$ref": "#/parameters/significantParam"
           }
         ],
@@ -991,8 +979,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -1007,7 +994,7 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
-          },
+          }
         ],
         "description": "Returns player data",
         "produces": [
@@ -1017,8 +1004,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
@@ -1033,7 +1019,7 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
-          },
+          }
         ],
         "description": "Returns player data",
         "produces": [
@@ -1043,14 +1029,13 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-              }
+              "properties": {}
             }
           }
         }
       }
     },
-        "/metadata": {
+    "/metadata": {
       "get": {
         "tags": [
           "metadata"
