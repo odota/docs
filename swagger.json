@@ -218,7 +218,7 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
-          },
+          }
         ],
         "description": "Returns player data",
         "produces": [
