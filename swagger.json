@@ -582,7 +582,7 @@
         "tags": [
           "players"
         ],
-        "summary": "A Dota 2 player",
+        "summary": "A Dota 2 player's categorical match counts",
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
@@ -644,12 +644,12 @@
         }
       }
     },
-    "/players/{account_id}/histograms": {
+    "/players/{account_id}/histograms/{field}": {
       "get": {
         "tags": [
           "players"
         ],
-        "summary": "A Dota 2 player",
+        "summary": "A Dota 2 player's histograms in a stat",
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
@@ -714,12 +714,12 @@
         }
       }
     },
-    "/players/{account_id}/trends": {
+    "/players/{account_id}/trends/{field}": {
       "get": {
         "tags": [
           "players"
         ],
-        "summary": "A Dota 2 player",
+        "summary": "A Dota 2 player's trends in a stat",
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
@@ -856,7 +856,7 @@
         "tags": [
           "players"
         ],
-        "summary": "A Dota 2 player",
+        "summary": "A Dota 2 player's item history",
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
