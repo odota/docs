@@ -21,6 +21,13 @@
       "required": true,
       "type": "integer"
     },
+    "fieldParam": {
+      "name": "field",
+      "in": "path",
+      "description": "Field to aggregate on",
+      "required": true,
+      "type": "string"
+    },
     "projectParam": {
       "name": "project",
       "in": "query",
