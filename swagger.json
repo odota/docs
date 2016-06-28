@@ -239,6 +239,31 @@
         }
       }
     },
+    "/players/{account_id}/wl": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player wins/loses",
+        "parameters": [
+          {
+            "$ref": "#/parameters/accountIdParam"
+          }
+        ],
+        "description": "Returns a Dota 2 player's wins/loses",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player wins/loses",
+            "schema": {
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
     "/players/{account_id}/matches": {
       "get": {
         "tags": [
