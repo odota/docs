@@ -244,19 +244,19 @@
         "tags": [
           "players"
         ],
-        "summary": "A Dota 2 player wins/loses",
+        "summary": "A Dota 2 player wins/losses",
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
           }
         ],
-        "description": "Returns a Dota 2 player's wins/loses",
+        "description": "Returns a Dota 2 player's wins/losses",
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
-            "description": "Player wins/loses",
+            "description": "Player wins/losses",
             "schema": {
               "properties": {}
             }
