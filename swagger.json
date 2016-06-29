@@ -256,7 +256,6 @@
           {
             "$ref": "#/parameters/limitParam"
           },
-          }
           {
             "$ref": "#/parameters/winParam"
           },
