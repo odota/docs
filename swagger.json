@@ -28,6 +28,10 @@
       "required": true,
       "type": "string"
     },
+    "limitParam": {
+      "name": "limit",
+      "description": "Number of matches to limit to"
+    },
     "projectParam": {
       "name": "project",
       "in": "query",
@@ -250,6 +254,10 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          }
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -315,6 +323,9 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
           },
           {
             "$ref": "#/parameters/projectParam"
@@ -385,6 +396,9 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
           },
           {
             "$ref": "#/parameters/winParam"
@@ -521,6 +535,9 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -586,6 +603,9 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
           },
           {
             "$ref": "#/parameters/winParam"
@@ -655,6 +675,9 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -720,6 +743,9 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
           },
           {
             "$ref": "#/parameters/fieldParam"
@@ -792,6 +818,9 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
             "$ref": "#/parameters/fieldParam"
           },
           {
@@ -862,6 +891,9 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -927,6 +959,9 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
           },
           {
             "$ref": "#/parameters/winParam"
@@ -996,6 +1031,9 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -1052,7 +1090,7 @@
         }
       }
     },
-    "/players/{account_id}/rating": {
+    "/players/{account_id}/ratings": {
       "get": {
         "tags": [
           "players"
