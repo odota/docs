@@ -28,6 +28,20 @@
       "required": true,
       "type": "string"
     },
+    "limitParam": {
+      "name": "limit",
+      "in": "query",
+      "description": "Number of matches to limit to",
+      "required": false,
+      "type": "integer"
+    },
+    "offsetParam": {
+      "name": "offset",
+      "in": "query",
+      "description": "Number of matches to offset start by",
+      "required": false,
+      "type": "integer"
+    },
     "projectParam": {
       "name": "project",
       "in": "query",
@@ -250,6 +264,12 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -315,6 +335,12 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/projectParam"
@@ -385,6 +411,12 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/winParam"
@@ -521,6 +553,12 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -586,6 +624,12 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/winParam"
@@ -655,6 +699,12 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -720,6 +770,12 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/fieldParam"
@@ -792,6 +848,12 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/fieldParam"
           },
           {
@@ -862,6 +924,12 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -927,6 +995,12 @@
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/winParam"
@@ -996,6 +1070,12 @@
             "$ref": "#/parameters/accountIdParam"
           },
           {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -1052,7 +1132,7 @@
         }
       }
     },
-    "/players/{account_id}/rating": {
+    "/players/{account_id}/ratings": {
       "get": {
         "tags": [
           "players"
@@ -1141,7 +1221,7 @@
           "distributions"
         ],
         "summary": "Global Dota 2 statistics",
-        "description": "Returns ability data",
+        "description": "Returns distribution data",
         "produces": [
           "application/json"
         ],
