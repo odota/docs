@@ -13,6 +13,10 @@
   "produces": [
     "application/json"
   ],
+  "parameters": {
+    "accountIdParam": {
+      "name": "account_id",
+      "in": "path",
       "description": "Steam32 account ID",
       "required": true,
       "type": "integer"
@@ -34,7 +38,7 @@
     "offsetParam": {
       "name": "offset",
       "in": "query",
-      "description": "Number of offset for limit",
+      "description": "Number of matches to offset start by",
       "required": false,
       "type": "integer"
     },
