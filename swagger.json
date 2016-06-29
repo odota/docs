@@ -13,10 +13,6 @@
   "produces": [
     "application/json"
   ],
-  "parameters": {
-    "accountIdParam": {
-      "name": "account_id",
-      "in": "path",
       "description": "Steam32 account ID",
       "required": true,
       "type": "integer"
@@ -30,7 +26,17 @@
     },
     "limitParam": {
       "name": "limit",
-      "description": "Number of matches to limit to"
+      "in": "query",
+      "description": "Number of matches to limit to",
+      "required": false,
+      "type": "integer"
+    },
+    "offsetParam": {
+      "name": "offset",
+      "in": "query",
+      "description": "Number of offset for limit",
+      "required": false,
+      "type": "integer"
     },
     "projectParam": {
       "name": "project",
@@ -257,6 +263,9 @@
             "$ref": "#/parameters/limitParam"
           },
           {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -325,6 +334,9 @@
           },
           {
             "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/projectParam"
@@ -398,6 +410,9 @@
           },
           {
             "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/winParam"
@@ -537,6 +552,9 @@
             "$ref": "#/parameters/limitParam"
           },
           {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -605,6 +623,9 @@
           },
           {
             "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/winParam"
@@ -677,6 +698,9 @@
             "$ref": "#/parameters/limitParam"
           },
           {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -745,6 +769,9 @@
           },
           {
             "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/fieldParam"
@@ -820,6 +847,9 @@
             "$ref": "#/parameters/limitParam"
           },
           {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/fieldParam"
           },
           {
@@ -893,6 +923,9 @@
             "$ref": "#/parameters/limitParam"
           },
           {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -963,6 +996,9 @@
             "$ref": "#/parameters/limitParam"
           },
           {
+            "$ref": "#/parameters/offsetParam"
+          },
+          {
             "$ref": "#/parameters/winParam"
           },
           {
@@ -1031,6 +1067,9 @@
           },
           {
             "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/offsetParam"
           },
           {
             "$ref": "#/parameters/winParam"
@@ -1178,7 +1217,7 @@
           "distributions"
         ],
         "summary": "Global Dota 2 statistics",
-        "description": "Returns ability data",
+        "description": "Returns distribution data",
         "produces": [
           "application/json"
         ],
