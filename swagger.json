@@ -239,6 +239,73 @@
         }
       }
     },
+    "/players/{account_id}/wl": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "A Dota 2 player wins/losses",
+        "parameters": [
+          {
+            "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/winParam"
+          },
+          {
+            "$ref": "#/parameters/patchParam"
+          },
+          {
+            "$ref": "#/parameters/gameModeParam"
+          },
+          {
+            "$ref": "#/parameters/lobbyTypeParam"
+          },
+          {
+            "$ref": "#/parameters/regionParam"
+          },
+          {
+            "$ref": "#/parameters/dateParam"
+          },
+          {
+            "$ref": "#/parameters/laneRoleParam"
+          },
+          {
+            "$ref": "#/parameters/heroIdParam"
+          },
+          {
+            "$ref": "#/parameters/isRadiantParam"
+          },
+          {
+            "$ref": "#/parameters/includedAccountIdParam"
+          },
+          {
+            "$ref": "#/parameters/excludedAccountIdParam"
+          },
+          {
+            "$ref": "#/parameters/withHeroIdParam"
+          },
+          {
+            "$ref": "#/parameters/againstHeroIdParam"
+          },
+          {
+            "$ref": "#/parameters/significantParam"
+          }
+        ],
+        "description": "Returns a Dota 2 player's wins/losses",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player wins/losses",
+            "schema": {
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
     "/players/{account_id}/matches": {
       "get": {
         "tags": [
