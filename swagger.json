@@ -244,7 +244,7 @@
         "tags": [
           "players"
         ],
-        "summary": "A Dota 2 player wins/losses",
+        "summary": "A Dota 2 player's wins/losses",
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
