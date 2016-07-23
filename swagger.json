@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "YASP API",
-    "description": "Provides Dota 2 data. Please use the official Steam WebAPI when possible. See http://dev.dota2.com/showthread.php?t=58317",
+    "description": "Provides Dota 2 data.",
     "version": "1.0.0"
   },
   "host": "yasp.co",
