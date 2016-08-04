@@ -146,7 +146,14 @@
       "description": "Whether the match was significant for aggregation purposes",
       "required": false,
       "type": "integer"
-    }
+    },
+    "sortParam": {
+      "name": "sort",
+      "in": "query",
+      "description": "The field to return matches sorted by in descending order",
+      "required": false,
+      "type": "string"
+    },    
   },
   "paths": {
     "/matches/{match_id}": {
@@ -310,6 +317,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns a Dota 2 player's wins/losses",
@@ -386,6 +396,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns a Dota 2 player's matches",
@@ -459,15 +472,18 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
-        "description": "Returns player data",
+        "description": "Count of games played on heroes",
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
-            "description": "Player data",
+            "description": "Success",
             "schema": {
               "properties": {}
             }
@@ -526,6 +542,79 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
+          }
+        ],
+        "description": "Returns player data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Player data",
+            "schema": {
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
+    "/players/{account_id}/pros": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "Counts of games played with professional players",
+        "parameters": [
+          {
+            "$ref": "#/parameters/accountIdParam"
+          },
+          {
+            "$ref": "#/parameters/winParam"
+          },
+          {
+            "$ref": "#/parameters/patchParam"
+          },
+          {
+            "$ref": "#/parameters/gameModeParam"
+          },
+          {
+            "$ref": "#/parameters/lobbyTypeParam"
+          },
+          {
+            "$ref": "#/parameters/regionParam"
+          },
+          {
+            "$ref": "#/parameters/dateParam"
+          },
+          {
+            "$ref": "#/parameters/laneRoleParam"
+          },
+          {
+            "$ref": "#/parameters/heroIdParam"
+          },
+          {
+            "$ref": "#/parameters/isRadiantParam"
+          },
+          {
+            "$ref": "#/parameters/includedAccountIdParam"
+          },
+          {
+            "$ref": "#/parameters/excludedAccountIdParam"
+          },
+          {
+            "$ref": "#/parameters/withHeroIdParam"
+          },
+          {
+            "$ref": "#/parameters/againstHeroIdParam"
+          },
+          {
+            "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns player data",
@@ -599,6 +688,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns player data",
@@ -672,6 +764,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns player data",
@@ -745,6 +840,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns player data",
@@ -821,6 +919,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns player data",
@@ -897,6 +998,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns player data",
@@ -970,6 +1074,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns player data",
@@ -1043,6 +1150,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns player data",
@@ -1116,6 +1226,9 @@
           },
           {
             "$ref": "#/parameters/significantParam"
+          },
+          {
+            "$ref": "#/parameters/sortParam"
           }
         ],
         "description": "Returns player data",
@@ -1143,13 +1256,13 @@
             "$ref": "#/parameters/accountIdParam"
           }
         ],
-        "description": "Returns player data",
+        "description": "Returns player rating data",
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
-            "description": "Player data",
+            "description": "Success",
             "schema": {
               "properties": {}
             }
@@ -1168,13 +1281,13 @@
             "$ref": "#/parameters/accountIdParam"
           }
         ],
-        "description": "Returns player data",
+        "description": "Returns player ranking data",
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
-            "description": "Player data",
+            "description": "Success",
             "schema": {
               "properties": {}
             }
