@@ -24,9 +24,14 @@ async.eachSeries(Object.keys(spec.paths), function (path, cb)
     }
     else
     {
+      schema.type = "object";
+      schema.properties = {};
       Object.keys(body).forEach(function (k)
       {
-        schema[k] = typeof(body[k]);
+        schema.properties[k] = {
+          description: k,
+          type: typeof (body[k])
+        };
       });
     }
     console.error(schema);
