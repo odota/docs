@@ -566,7 +566,7 @@
         "tags": [
           "players"
         ],
-        "summary": "Counts of games played with professional players",
+        "summary": "A Dota 2 player's games played with professional players",
         "parameters": [
           {
             "$ref": "#/parameters/accountIdParam"
