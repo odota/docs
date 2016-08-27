@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "YASP API",
+    "title": "API",
     "description": "Provides Dota 2 data.",
     "version": "1.0.0"
   },
