@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "API",
-    "description": "# Introduction\nThis API provides Dota 2 related data.\n# Rate Limit\nThere is a currently a rate limit of 90 requests per minute.",
+    "description": "# Introduction\nThis API provides Dota 2 related data. Please keep request rate to approximately 1/s.",
     "version": "1.0.0"
   },
   "host": "yasp.co",
@@ -178,53 +178,44 @@
           "200": {
             "description": "An object with match data",
             "schema": {
-              "properties": {
-                "match_id": {},
-                "barracks_status_dire": {},
-                "barracks_status_radiant": {},
-                "chat": {},
-                "cluster": {},
-                "duration": {},
-                "engine": {},
-                "first_blood_time": {},
-                "game_mode": {},
-                "human_players": {},
-                "leagueid": {},
-                "lobby_type": {},
-                "match_seq_num": {},
-                "negative_votes": {},
-                "objectives": {},
-                "pgroup": {},
-                "picks_bans": {},
-                "positive_votes": {},
-                "radiant_gold_adv": {},
-                "radiant_win": {},
-                "radiant_xp_adv": {},
-                "start_time": {},
-                "teamfights": {},
-                "tower_status_dire": {},
-                "tower_status_radiant": {},
-                "version": {},
-                "replay_url": {},
-                "players": {},
-                "patch": {},
-                "region": {},
-                "total_gold": {},
-                "total_xp": {},
-                "kills_per_min": {},
-                "heroes": {},
-                "all_word_counts": {},
-                "my_word_counts": {},
-                "posData": {},
-                "comeback": {},
-                "stomp": {},
-                "hero_combat": {},
-                "sentiment": {},
-                "incomeData": {},
-                "graphData": {},
-                "rating": {},
-                "rating_percentile": {}
-              }
+              "match_id": "number",
+              "cluster": "number",
+              "replay_salt": "number",
+              "series_id": "number",
+              "series_type": "number",
+              "parties": "object",
+              "skill": "number",
+              "players": "object",
+              "barracks_status_dire": "number",
+              "barracks_status_radiant": "number",
+              "chat": "object",
+              "duration": "number",
+              "engine": "number",
+              "first_blood_time": "number",
+              "game_mode": "number",
+              "human_players": "number",
+              "leagueid": "number",
+              "lobby_type": "number",
+              "match_seq_num": "number",
+              "negative_votes": "number",
+              "objectives": "object",
+              "picks_bans": "object",
+              "positive_votes": "number",
+              "radiant_gold_adv": "object",
+              "radiant_win": "boolean",
+              "radiant_xp_adv": "object",
+              "start_time": "number",
+              "teamfights": "object",
+              "tower_status_dire": "number",
+              "tower_status_radiant": "number",
+              "version": "number",
+              "patch": "number",
+              "region": "number",
+              "all_word_counts": "object",
+              "my_word_counts": "object",
+              "throw": "number",
+              "loss": "number",
+              "replay_url": "string"
             }
           }
         }
@@ -249,12 +240,11 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {
-                "profile": {},
-                "mmr_estimate": {},
-                "solo_competitive_rank": {},
-                "competitive_rank": {}
-              }
+              "tracked_until": "string",
+              "solo_competitive_rank": "string",
+              "competitive_rank": "string",
+              "mmr_estimate": "object",
+              "profile": "object"
             }
           }
         }
@@ -330,7 +320,8 @@
           "200": {
             "description": "Player wins/losses",
             "schema": {
-              "properties": {}
+              "win": "number",
+              "lose": "number"
             }
           }
         }
@@ -409,7 +400,7 @@
           "200": {
             "description": "Player matches",
             "schema": {
-              "properties": {}
+              "type": "array"
             }
           }
         }
@@ -485,7 +476,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "properties": {}
+              "type": "array"
             }
           }
         }
@@ -555,7 +546,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {}
+              "type": "array"
             }
           }
         }
@@ -625,7 +616,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {}
+              "type": "array"
             }
           }
         }
@@ -701,7 +692,35 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {}
+              "kills": "object",
+              "deaths": "object",
+              "assists": "object",
+              "kda": "object",
+              "gold_per_min": "object",
+              "xp_per_min": "object",
+              "last_hits": "object",
+              "denies": "object",
+              "lane_efficiency_pct": "object",
+              "duration": "object",
+              "level": "object",
+              "hero_damage": "object",
+              "tower_damage": "object",
+              "hero_healing": "object",
+              "stuns": "object",
+              "tower_kills": "object",
+              "neutral_kills": "object",
+              "courier_kills": "object",
+              "purchase_tpscroll": "object",
+              "purchase_ward_observer": "object",
+              "purchase_ward_sentry": "object",
+              "purchase_gem": "object",
+              "purchase_rapier": "object",
+              "pings": "object",
+              "throw": "object",
+              "comeback": "object",
+              "stomp": "object",
+              "loss": "object",
+              "actions_per_min": "object"
             }
           }
         }
@@ -777,7 +796,12 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {}
+              "leaver_status": "object",
+              "game_mode": "object",
+              "lobby_type": "object",
+              "lane_role": "object",
+              "region": "object",
+              "patch": "object"
             }
           }
         }
@@ -856,7 +880,12 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {}
+              "2": "object",
+              "4": "object",
+              "5": "object",
+              "10": "object",
+              "12": "object",
+              "15": "object"
             }
           }
         }
@@ -932,7 +961,8 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {}
+              "obs": "object",
+              "sen": "object"
             }
           }
         }
@@ -1008,7 +1038,8 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "properties": {}
+              "my_word_counts": "object",
+              "all_word_counts": "object"
             }
           }
         }
@@ -1033,7 +1064,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "properties": {}
+              "type": "array"
             }
           }
         }
@@ -1058,7 +1089,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "properties": {}
+              "type": "array"
             }
           }
         }
@@ -1078,20 +1109,8 @@
           "200": {
             "description": "Current site metadata",
             "schema": {
-              "properties": {
-                "banner": {
-                  "type": "string",
-                  "description": "The current banner message"
-                },
-                "cheese": {
-                  "type": "object",
-                  "description": "Progress toward donation goal"
-                },
-                "user": {
-                  "type": "object",
-                  "description": "Data of the currently logged in user"
-                }
-              }
+              "banner": "object",
+              "cheese": "object"
             }
           }
         }
@@ -1111,7 +1130,8 @@
           "200": {
             "description": "An object with distribution data",
             "schema": {
-              "properties": {}
+              "mmr": "object",
+              "country_mmr": "object"
             }
           }
         }
@@ -1140,7 +1160,7 @@
           "200": {
             "description": "An array of search results",
             "schema": {
-              "properties": {}
+              "type": "array"
             }
           }
         }
@@ -1169,7 +1189,8 @@
           "200": {
             "description": "Array of top players",
             "schema": {
-              "properties": {}
+              "hero_id": "number",
+              "rankings": "object"
             }
           }
         }
@@ -1198,7 +1219,8 @@
           "200": {
             "description": "Benchmark values",
             "schema": {
-              "properties": {}
+              "hero_id": "number",
+              "result": "object"
             }
           }
         }
