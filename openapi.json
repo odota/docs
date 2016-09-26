@@ -1135,33 +1135,7 @@
           "200": {
             "description": "Player data",
             "schema": {
-              "type": "object",
-              "properties": {
-                "2": {
-                  "description": "2",
-                  "type": "object"
-                },
-                "4": {
-                  "description": "4",
-                  "type": "object"
-                },
-                "5": {
-                  "description": "5",
-                  "type": "object"
-                },
-                "10": {
-                  "description": "10",
-                  "type": "object"
-                },
-                "12": {
-                  "description": "12",
-                  "type": "object"
-                },
-                "15": {
-                  "description": "15",
-                  "type": "object"
-                }
-              }
+              "type": "array"
             }
           }
         }
